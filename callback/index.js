@@ -23,6 +23,8 @@ const calc = (num1, num2, callback) => {
 
 console.log(calc(3,5,div))
 
+
+//Ejemplo de un callback que imprime la fecha
 const date = (callback) =>{
     console.log(new Date)
     let date = new Date
