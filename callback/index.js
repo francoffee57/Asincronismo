@@ -22,3 +22,14 @@ const calc = (num1, num2, callback) => {
 }
 
 console.log(calc(3,5,div))
+
+const date = (callback) =>{
+    console.log(new Date)
+    let date = new Date
+    setTimeout(()=> callback(date),3000)
+}
+
+const printDate = (dateNow) => {
+    console.log('- '+dateNow)
+}
+date(printDate)
