@@ -4,8 +4,9 @@
   "description": "trabajar con asincronismo en javascript\u001b[D\u001b[D\u001b[D\u001b[D\u001b[S\u001b[D\u001b[D\u001b[D\u001b[J\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[T\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
   "main": "src/index.js",
   "scripts": {
-    "callback": "node ../callback/index.js",
-    "callback:challenge": "node ../callback/challenge.js"
+    "callback": "node callback/index.js",
+    "callback:challenge": "node callback/challenge.js",
+    "promise": "node promise/index.js"
   },
   "repository": {
     "type": "git",
