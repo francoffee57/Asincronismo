@@ -1,4 +1,3 @@
-
 const somethingWillHapped = ()=>{
     //Creamos una promesa que retornara resolve (si se cumple) y reject (si no se cumple)
     return new Promise((resolve, reject)=>{
@@ -21,7 +20,6 @@ const somethingWillHapped2 =()=>{
                 }
             },2000)
         })
-    
 }
 
 somethingWillHapped()
