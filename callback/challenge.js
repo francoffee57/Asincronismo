@@ -5,8 +5,8 @@
 //la instanciamos:
 let XMLHttprequest = require('xmlhttprequest').XMLHttpRequest
 
-//Url de la api
-const api = 'https://rickandmortyapi.com/api/character/';
+//Url de la api. Por convención un valor que jamas va a cambiar ni cambiar nombre se pone todo en mayusculas. 
+const API = 'https://rickandmortyapi.com/api/character/';
 
 
 //construir la peticion 
@@ -56,12 +56,12 @@ function fetchData(url_api, callback){
 //Llamamos a la api
 // primero buscamos la lista de personajes
 // pasamos la url y una funcion para volver a llamarla
-fetchData(api, (error1, data1) => {
+fetchData(API, (error1, data1) => {
     // si error, matamos retornando un error
     if(error1) return console.error(error1)
 
     // luego buscamos en la api el id de Rick
-    fetchData(api + data1.results[0].id, (error2, data2) => {
+    fetchData(API + data1.results[0].id, (error2, data2) => {
       // si error, matamos retornando un error
       if(error2) return console.error(error2)
 
@@ -76,8 +76,8 @@ fetchData(api, (error1, data1) => {
         console.log(data3.dimension)
         
         // rutas de las peticiones en orden
-        console.log(api)
-        console.log(api + data1.results[0].id) 
+        console.log(API)
+        console.log(API + data1.results[0].id) 
         console.log(data2.origin.url)
       
       });

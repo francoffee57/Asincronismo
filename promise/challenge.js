@@ -1,9 +1,9 @@
 const fetchData = require('../utils/fetchData.js')
 
-const api = 'https://rickandmortyapi.com/api/character/';
+const API = 'https://rickandmortyapi.com/api/character/'
 
 
-fetchData(api)
+fetchData(API)
     .then(data => {
         console.log(data.info.count)
         return fetchData(`${api}${data.results[0].id}`)
